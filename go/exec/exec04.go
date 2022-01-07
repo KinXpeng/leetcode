@@ -1,4 +1,4 @@
-package main
+package exec
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 )
 
 /* 生成随机数组并翻转数组 */
-func main() {
+func FlipArray() {
 	var (
 		randArr [7]int
 		temp    = 0 // 临时变量，存储中间数据
@@ -25,5 +25,5 @@ func main() {
 		randArr[num-1-j] = randArr[j]
 		randArr[j] = temp
 	}
-	fmt.Printf("翻转后的数组为%v", randArr)
+	fmt.Printf("翻转后的数组为%v\n", randArr)
 }
