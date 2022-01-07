@@ -1,7 +1,8 @@
 package main
 
 import (
-	utils "exec/utils" //
+	_ "exec/exec"
+	"exec/utils"
 )
 
 func main() {
@@ -9,6 +10,6 @@ func main() {
 	//exec.RotateArr([]int{1, 2, 3, 4, 5, 6, 7}, 3) // 旋转数组
 	//exec.FlipArray()                              // 生成随机数组并翻转数组
 
-	//utils.BubbleSort([]int{24, 69, 80, 57, 13, 31})           // 冒泡排序
+	utils.BubbleSort([]int{24, 69, 80, 57, 13, 31})           // 冒泡排序
 	utils.BinaryFind([]int{13, 24, 31, 57, 69, 80}, 0, 6, 57) // 二分法查找
 }
